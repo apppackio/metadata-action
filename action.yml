@@ -1,5 +1,9 @@
 name: AppPack Metadata
 description: Fetch AppPack build metadata
+branding:
+  icon: box
+  color: purple
+
 inputs:
   appname:
     description: Name of the AppPack app
