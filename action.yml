@@ -1,0 +1,17 @@
+name: AppPack Metadata
+description: Fetch AppPack build metadata
+inputs:
+  appname:
+    description: Name of the AppPack app
+    required: true
+outputs:
+  docker_repo:
+    description: full name of the app's Docker repository
+  docker_registry:
+    description: domain of the app's Docker registry
+  artifacts_bucket:
+    description: name of the S3 bucket used for build artifacts
+
+runs:
+  using: node12
+  main: index.js
